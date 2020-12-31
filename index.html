@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Portafolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="container">
+      <div class="logo">
+        <a href="index.html">AEscobar </a>
+
+      </div>
+      <aside>
+
+      </aside>
+      <button class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+      </button>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#me">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </section>
+  </header>
+  <section id="inicio" class="home">
+    <article class="hero-image">
+      <aside class="hero-image-opacity">
+        <div class="hero-image-content">
+          <h2 class="hero-image-title">Bienvenid@s <br>
+            a mi sitio web
+          </h2>
+          <a class="btn" href="#contacto">CONTÁCTAME</a>
+        </div>
+      </aside>
+    </article>
+  </section>
+  <section id="me" class="me section container full-lg-screen">
+    <article class="text-lg-right">
+      <aside class="text-center text-lg-right">
+        <h1>Andrés Escobar</h1>
+        <h5>Ing. en Sistemas Informáticos</h5>
+      </aside>
+      <p>
+        Hola, mi nombre es Edwin Andrés Escobar Pinargote tengo 27 años, resido en Ecuador-Manabí-Portoviejo, estoy más
+        orientado al <i>Frontend Jr.</i> graduado de Ingeniería en Sistemas Informaticos en la Universidad Técnica de
+        Manabí.
+      </p>
+      <p>A nível de
+        <i>Backend</i> poseo conocimientos básicos que fueron impartidos en materias cursadas en la Universidad.
+      </p>
+      <p>
+        Me considero autodidacta , estoy en constante aprendizaje que es lo que demanda actualmente el mundo de las
+        tecnologías , y aprovecho lo grandioso que existe en la <i>Web</i> .
+      </p>
+    </article>
+    <article class="me-img">
+      <img class="gray-scale" src="./assets/ae.png" alt="AEscobar">
+    </article>
+    <article>
+      <h2 class="text-center text-lg-left">Mis Habilidades</h2>
+      <div class="progress">
+        <p>
+          <b>Desarrollo <i>Web Frontend</i></b>
+          <b>75%</b>
+        </p>
+        <progress value="75" min="0" max="100"></progress>
+      </div>
+      <div class="progress">
+        <p>
+          <b>Desarrollo <i>Web Backend</i></b>
+          <b>50%</b>
+        </p>
+        <progress value="50" min="0" max="100"></progress>
+      </div>
+      <div class="progress">
+        <p>
+          <b>Soporte y Redes </b>
+          <b>60%</b>
+        </p>
+        <progress value="60" min="0" max="100"></progress>
+      </div>
+      <div class="progress">
+        <p>
+          <b>Control de acceso biométricos</b>
+          <b>60%</b>
+        </p>
+        <progress value="60" min="0" max="100"></progress>
+      </div>
+    </article>
+  </section>
+
+  <section id="proyectos" class="proyectos section  container full-lg-screen">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <a href="#trabajo-1" class="portfolio-card">
+        <img src="./assets/wp.png" alt="Trabajo 1">
+        <aside class="portfolio-card-inf">
+          <div>
+            <h3>Proyecto 1</h3>
+            <p>Práctica API Wordpress.</p>
+          </div>
+        </aside>
+      </a>
+
+      <a href="#trabajo-2" class="portfolio-card">
+        <img src="./assets/pok.png" alt="Trabajo 2">
+        <aside class="portfolio-card-inf">
+          <div>
+            <h3>Proyecto 2</h3>
+            <p>Api Pokemon.</p>
+          </div>
+        </aside>
+      </a>
+
+      <a href="#trabajo-3" class="portfolio-card">
+        <img src="./assets/descarga.png" alt="Trabajo 3">
+        <aside class="portfolio-card-inf">
+          <div>
+            <h3>Proyecto 3</h3>
+            <p>API tv&shows.</p>
+          </div>
+        </aside>
+      </a>
+
+      <a href="#trabajo-4" class="portfolio-card">
+        <img src="./assets/music-696x514.jpg" alt="Trabajo 4">
+        <aside class="portfolio-card-inf">
+          <div>
+            <h3>Proyecto 4</h3>
+            <p>API Musics&Artist</p>
+          </div>
+        </aside>
+      </a>
+
+    </div>
+
+  </section>
+  <article class="modal" id="trabajo-1">
+    <div class="modal-content">
+      <a href="#close" class="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+        </svg>
+      </a>
+      <article class="portfolio-modal">
+        <img src="./assets/wp.png" alt="">
+        <div class="portfolio-inf">
+          <h3>Proyecto 1</h3>
+          <p>Práctica realizada al sitios CSS Tricks mediante el uso de la API de Wordpress.
+          </p>
+          <aside class="portfolio-details">
+            <small><b>Enlace: </b></small>
+            <small><a href="https://edanespi93.github.io/practicas/index.html" rel="noopener"
+                target="_blank">https://edanespi93.github.io/practicas/index.html</a></small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="trabajo-2">
+    <div class="modal-content">
+      <a href="#close" class="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+        </svg>
+      </a>
+      <article class="portfolio-modal">
+        <img src="./assets/pok.png" alt="">
+        <div class="portfolio-inf">
+          <h3>Proyecto 2</h3>
+          <p>API pokemon json-fetch
+          </p>
+          <aside class="portfolio-details">
+            <small><b>Enlace: </b></small>
+            <small><a href="http://projectsjs.tonohost.com/api-pokemon.html" rel="noopener"
+                target="_blank">http://projectsjs.tonohost.com/api-pokemon.html</a></small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="trabajo-3">
+    <div class="modal-content">
+      <a href="#close" class="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+        </svg>
+      </a>
+      <article class="portfolio-modal">
+        <img src="./assets/descarga.png" alt="">
+        <div class="portfolio-inf">
+          <h3>Proyecto 3</h3>
+          <p>Buscador Api TV&Shows
+          </p>
+          <aside class="portfolio-details">
+            <small><b>Enlace: </b></small>
+            <small><a href="http://projectsjs.tonohost.com/tv_api.html" rel="noopener"
+                target="_blank">http://projectsjs.tonohost.com/tv_api.html</a></small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="modal" id="trabajo-4">
+    <div class="modal-content">
+      <a href="#close" class="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+        </svg>
+      </a>
+      <article class="portfolio-modal">
+        <img src="./assets/music-696x514.jpg" alt="">
+        <div class="portfolio-inf">
+          <h3>Proyecto 1</h3>
+          <p>API artist-music fetch
+          </p>
+          <aside class="portfolio-details">
+            <small><b>Enlace: </b></small>
+            <small><a href="http://projectsjs.tonohost.com/api-canciones.html" rel="noopener"
+                target="_blank">http://projectsjs.tonohost.com/api-canciones.html</a></small>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </article>
+
+  <section id="contacto" class="contacto section full-lg-screen container">
+    <form class="contact-form">
+      <legend>Envíanos tus comentarios</legend>
+      <input type="text" name="name" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+      <input type="email" name="email" placeholder="Escribe tu email"
+        pattern="^[a-z0-9]+(\\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+      <input type="text" name="subject" placeholder="Asunto a tratar" pattern="^[A-Z0-9a-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+      <textarea name="comments" rows="5" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$"
+        required></textarea>
+      <input type="submit" class="btn-enviar" value="Enviar">
+      <div class="contact-form-loader none">
+        <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#d90062">
+          <g fill="none" fill-rule="evenodd">
+            <g transform="translate(1 1)" stroke-width="2">
+              <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
+              <path d="M36 18c0-9.94-8.06-18-18-18">
+                <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s"
+                  repeatCount="indefinite" />
+              </path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="contact-form-response none">
+        <p>Los datos han sido enviados</p>
+      </div>
+    </form>
+    <div class="links">
+      <a href="https://www.facebook.com/andres.escobar1993" target="_blank" rel="noopenner">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/Andres93Escobar" target="_blank" rel="noopenner">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/andr%C3%A9s-escobar-0a52b91b5/" target="_blank" rel="noopenner">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <div>
+  </section>
+
+  <footer class="footer section">
+
+    <small>Sitio diseñado por Andrés Escobar</small>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
