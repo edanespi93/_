@@ -1,8 +1,8 @@
 /*Custom Properties*/
 
 :root {
-  --first-color: #d90062;
-  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --first-color: #2685dd;
+  --first-alpha-color: #79b0e4;
   --second-color: #14192d;
   --second-alpha-color: rgba(20, 25, 45, 0.75);
   --third-color: #501464;
@@ -198,6 +198,7 @@ p {
   opacity: 0;
   pointer-events: none;
   transition: all 1s ease-out;
+  border-radius: 10px;
 }
 
 .modal-content {
@@ -275,8 +276,7 @@ box-shadow-1 {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 1200px;
 }
 
@@ -328,10 +328,6 @@ box-shadow-1 {
   .text-lg-right {
     text-align: right;
   }
-  img {
-    max-height: 100;
-    width: 50;
-  }
 }
 
 /*Site styles*/
@@ -372,22 +368,24 @@ box-shadow-1 {
 }
 
 .portfolio-card img {
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%;
+  height: 60%;
+  object-fit: fill;
+  margin-top: 2rem;
 }
 
 .portfolio-card-inf {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  background-color: var(--first-alpha-color);
+  background-color: var(--first-color);
   opacity: 0;
   padding: 1rem;
   color: var(--white-color);
   pointer-events: none;
+  border-radius: 10px;
 }
 
 .portfolio-card:hover .portfolio-card-inf {
@@ -409,7 +407,8 @@ box-shadow-1 {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  max-height: 700px;
+  max-height: 100vh;
+  border-radius: 10px;
 }
 
 .portfolio-modal h3 {
@@ -425,8 +424,9 @@ box-shadow-1 {
   margin-right: auto;
   width: 80%;
   margin-top: 4rem;
-  background: var(--second-color);
+  background: #e9ecf0;
   color: var(--first-color);
+  border-radius: 10px;
 }
 
 .contact-form svg {
@@ -448,8 +448,9 @@ contact-form-loader {
   padding: 0.5rem;
   margin: 1rem auto;
   display: block;
-  width: 100%;
+  width: 85%;
   border-radius: 0.4rem;
+  border-color: #14192d;
 }
 
 .contact-form textarea {
@@ -470,7 +471,7 @@ contact-form-loader {
 }
 
 .contact-form input[type="submit"] {
-  width: 50%;
+  width: 40%;
   font-weight: bold;
   cursor: pointer;
 }
@@ -480,11 +481,11 @@ contact-form-loader {
 }
 
 .contact-form [required]:valid {
-  border: thin solid var(--form-ok-color);
+  border: thin solid rgb(58, 55, 55);
 }
 
 .contact-form [required]:invalid {
-  border: thin solid var(--form-error-color);
+  border: thin solid rgb(88, 87, 87);
 }
 
 .contact-form-error {
@@ -528,62 +529,6 @@ contact-form-loader {
   color: #0e1a21;
 }
 
-.slider {
-  position: relative;
-  border: thin solid var(--first-color);
-  width: 90%;
-  margin: 1rem auto;
-  text-align: center;
-}
-.slider-slides {
-  position: relative;
-  height: 400px;
-}
-.slider-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease;
-}
-.slider-slide img {
-  height: inherit;
-  width: 100%;
-
-  object-position: 10% 1%;
-}
-.slider-slide.active {
-  opacity: 1;
-  visibility: visible;
-}
-.slider-btn {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  display: flex;
-  justify-content: space-between;
-  font-size: 3rem;
-  font-weight: bold;
-}
-.slider a {
-  display: block;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  border: thin solid#d90062;
-  text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  transition: all 0.3s ease;
-}
-
-.slider a:hover {
-  color: #4d4d4d;
-}
-
 @keyframes show-message {
   0% {
     visibility: hidden;
@@ -610,6 +555,9 @@ contact-form-loader {
     align-content: center;
     align-items: center;
   }
+  .portfolio-card img {
+    margin: 0 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -621,10 +569,10 @@ contact-form-loader {
   }
   .proyectos > .container {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(3, 33%);
   }
   .proyectos .section-title {
-    grid-column: span 4;
+    grid-column: span 3;
   }
   .me {
     display: grid;
@@ -632,4 +580,21 @@ contact-form-loader {
     justify-content: space-between;
     align-content: center;
   }
+  .portfolio-card img {
+    margin: 0 10px;
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+.skills__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skill-group {
+  margin: 5px;
 }
